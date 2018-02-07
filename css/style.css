@@ -2,5 +2,24 @@
     color: blue;
 }
 body {
+    display:grid;
     background-color: yellow;
+    grid-template-columns: 40% 30% 30%;
+    grid-column-gap: 1em;
+    grid-row-gap: 1em;
+    
+  
+   
+}
+
+h1 {
+    background: yellow;
+    padding: 1em;
+    border: 50px;
+}
+h3 {
+    background: green;
+    grid-gap: 1em;
+    padding: 1em;
+   
 }

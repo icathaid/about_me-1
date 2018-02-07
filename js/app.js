@@ -18,7 +18,7 @@ if (answer1 === 'yes' || answer1 === 'y'){
 } else {
     alert('Sorry, That was not a valid answer. Maybe you made a typo, Lets Move to next question');
 }
-console.log('User was asked Question #1 and gave the answer to that question');
+console.log('User was asked whether they like pets. User gave an answer to that question');
 
 //Question #2
 
@@ -31,7 +31,7 @@ else if (answer2 === 'yes' || answer2 === 'y'){
 } else{
     alert('Invalid Response, follow the instructions');
 }
-console.log('User was asked Question #2 and gave the answer to that question');
+console.log('User was asked if they have a Brother. User gave an answer to that question');
 
 //Question #3
 
@@ -44,7 +44,7 @@ else if (answer3 === 'yes' || answer3 === 'y'){
 }else {
     alert('Invalid Response, Go to next Question');
     }
-console.log('User was asked Question #3 and gave the answer to that question');
+console.log('User was asked if they can IceSkate. User gave an answer to that question');
 
 //Question #4
 
@@ -56,19 +56,19 @@ if (answer4 === 'yes' || answer4 === 'y'){
 } else {
     alert('Invalid Answer, Lets move on to last Question');
 }
-console.log('User was asked Question #4 and gave the answer to that question');
+console.log('User was asked if they like math. User gave an answer to that question');
 
 //Question #5
 
 var answer5 = prompt('Next Question! Do you think I drive to Code fellows?').toLowerCase().trim();
 if (answer5 === 'yes' || answer5 === 'y'){
-    alert('Yes You are correct!, '+ userName + ' does commutes to Code Fellows on a bike');
+    alert('Yes, You are correct!, '+ userName + ' does commutes to Code Fellows on a bike');
 
 }else if(answer5 === 'n' || answer5 === 'no'){
     alert('Wrong!!! '+ userName + ' does commutes to Code Fellows on a bike. It takes about 20 min to Train station, and about 20 min to Code Fellows');
 }else {
     alert('Invalid Input, You\'re DONE!!!!');
 }
-console.log('User was asked Question #5 and gave the answer to that question');
+console.log('User was asked if they drive to Code Fellows. User gave an answer to that question');
 
 
