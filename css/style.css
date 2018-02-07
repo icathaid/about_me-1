@@ -3,17 +3,16 @@
 }
 body {
     display:grid;
-    background-color: yellow;
-    grid-template-columns: 40% 30% 30%;
-    grid-column-gap: 1em;
-    grid-row-gap: 1em;
-    
-  
-   
+    background-image: url(../img/travel.jpeg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 100%
+      
 }
 
 h1 {
-    background: yellow;
+    
     padding: 1em;
     border: 50px;
 }
