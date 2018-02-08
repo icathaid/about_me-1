@@ -13,46 +13,28 @@
   }
 */
 
-var cityState = ['Puyallup', 'Tacoma', 'Federal\ Way', 'Russia', 'Washington', 'Oregon'];
-var totalGuess = 0;
-var flag = true;
-  while(totalGuess < 6 && flag === false) {
-    var userInput = prompt('Guess what City and States I lived in').toLowerCase().trim();
-    for (var i = 0; i < cityState.length; i++) {
-    var state = cityState[i];
-    if (state === userInput) {
+
+var scoreCorrect = 0;
+var cityState = ['puyallup', 'tacoma', 'federal way'];
+var totalGuess = 6;
+
+var answerCorrect = false;
+while(totalGuess > 0 && answerCorrect === false) {
+  var userInput = prompt('Guess what City and States I lived in').toLowerCase().trim();
+  for (var i = 0; i < cityState.length; i++){
+    if (userInput === cityState[i]) {
       alert('good job');
-      flag = true;
-      } else {
-      alert('oops, You\'re wrong');
-  } if (state[1] = userInput){
-      alert('good job');
-      flag = true;
-      } else {
-      alert('oops, You\'re wrong');
-  } if (state[2] = userInput) {
-      alert('good job');
-      } else {
-      alert('oops, You\'re wrong');
-  } if (state[3] = userInput){
-      alert('good job');
-      } else {
-      alert('oops, You\'re wrong');
-  } if (state[4] = userInput){
-      alert('good job');
-    } else {
-      alert('oops, You\'re wrong');
-  } if (state[5] = userInput){
-      alert('Good Job');
-    } else {
-      alert('oops, You\'re wrong');
-  } if (state[6] = userInput){
-      alert('Good job');
-    } else {
-      alert('oops, You\'re wrong');
-    }   
-    }
-    }
+      scoreCorrect +=1;
+      answerCorrect = true;
+      break;
+    } 
+  } if (i >= cityState.length){
+    alert('oop, You\'re wrong ' + totalGuess);
+    console.log(totalGuess);
+    totalGuess --;
+    
+  }
+}
 
 
 
